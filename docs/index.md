@@ -10,7 +10,13 @@ If you are on macOS, you can install passgen from Homebrew, the macOS package ma
 
     brew install xfbs/local/passgen
 
-The source code is available [on github](https://github.com/xfbs/passgen).
+If you are on another platform, you can install it manually. You need `utf8proc`, `jansson` and `libsodium` as dependency. On a recent version of ubuntu, you can install it as follows:
+
+    wget https://github.com/xfbs/passgen/archive/latest.zip -O passgen.zip
+    unzip passgen.zip
+    cd passgen
+    make
+    make install
 
 ## Basic Usage
 
@@ -23,5 +29,4 @@ Alternatively, the format can be specified manually.
 
     $ passgen "[a-z]{8}[0-9]{2}"
     znjatqzb29
-
 
